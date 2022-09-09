@@ -24,4 +24,12 @@ Console.WriteLine($"Your car is {make} {model}, {year}");
 
 #endregion
 
+#region Deconstruction in Records
+
+var company = new DotNetKnowledge.Deconstruction.Company("iChoosr", 2008);
+var (name, founded) = company;
+Console.WriteLine($"Company named {name} was founded in {founded}");
+
+#endregion
+
 #endregion

@@ -20,3 +20,6 @@ public class Vehicle
         year = Year;
     }
 }
+
+//Records have deconstruction functionality by default
+public record Company(string Name, int Founded); 
