@@ -1,4 +1,6 @@
-﻿#region Deconstruction
+﻿using BenchmarkDotNet.Running;
+
+#region Deconstruction
 
 #region Deconstruction in Classes
 
@@ -48,5 +50,11 @@ var (key, value) = dict.FirstOrDefault();
 Console.WriteLine($"The first key value pair in the dictionary is {key}: {value}");
 
 #endregion
+
+#endregion
+
+#region Boxing&Unboxing
+
+BenchmarkRunner.Run<DotNetKnowledge.BoxingAndUnboxing.BenchmarkForBoxingAndUnboxing>();
 
 #endregion
